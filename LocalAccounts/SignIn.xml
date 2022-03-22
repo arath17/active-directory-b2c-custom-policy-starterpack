@@ -9,7 +9,7 @@
   <UserJourneys>
     <UserJourney Id="SignIn">
       <OrchestrationSteps>
-        <OrchestrationStep Order="1" Type="CombinedSignInAndSignUp" ContentDefinitionReferenceId="api.localaccountsignin">
+        <OrchestrationStep Order="1" Type="CombinedSignInAndSignUp" ContentDefinitionReferenceId="api.signuporsignin">
           <ClaimsProviderSelections>
             <ClaimsProviderSelection ValidationClaimsExchangeId="LocalAccountSigninEmailExchange" />
             <ClaimsProviderSelection TargetClaimsExchangeId="ForgotPasswordExchange" />
