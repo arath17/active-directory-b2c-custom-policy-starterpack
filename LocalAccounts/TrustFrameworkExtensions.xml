@@ -108,15 +108,6 @@
           <Metadata>
             <Item Key="EnforceEmailVerification">false</Item>
           </Metadata>
-          <OutputClaims>
-            <OutputClaim ClaimTypeReferenceId="objectId" />
-            <OutputClaim ClaimTypeReferenceId="email" PartnerClaimType="Verified.email" Required="true" />
-            <OutputClaim ClaimTypeReferenceId="newPassword" Required="true" />
-            <OutputClaim ClaimTypeReferenceId="reenterPassword" Required="true" />
-            <OutputClaim ClaimTypeReferenceId="executed-SelfAsserted-Input" DefaultValue="true" />
-            <OutputClaim ClaimTypeReferenceId="authenticationSource" />
-            <OutputClaim ClaimTypeReferenceId="newUser" />
-          </OutputClaims>
         </TechnicalProfile>
         <TechnicalProfile Id="ForgotPassword">
           <DisplayName>Forgot your password?</DisplayName>
