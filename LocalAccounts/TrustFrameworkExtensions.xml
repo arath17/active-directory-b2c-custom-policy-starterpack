@@ -39,7 +39,7 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.signuporsignin">
-        <LoadUri>>https://ashutestorgb2c.blob.core.windows.net/root/unified.cshtml</LoadUri>
+        <LoadUri>https://ashutestorgb2c.blob.core.windows.net/root/unified.cshtml</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:contract:unifiedssp:2.1.6</DataUri>
         <Metadata>
@@ -48,7 +48,7 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.selfasserted">
-        <LoadUri>>https://ashutestorgb2c.blob.core.windows.net/root/selfAsserted.cshtml</LoadUri>
+        <LoadUri>https://ashutestorgb2c.blob.core.windows.net/root/selfAsserted.cshtml</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.10</DataUri>
         <Metadata>
@@ -57,7 +57,7 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.selfasserted.profileupdate">
-        <LoadUri>>https://ashutestorgb2c.blob.core.windows.net/root/selfAsserted.cshtml</LoadUri>
+        <LoadUri>https://ashutestorgb2c.blob.core.windows.net/root/selfAsserted.cshtml</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.10</DataUri>
         <Metadata>
@@ -66,7 +66,7 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.localaccountsignup">
-        <LoadUri>>https://ashutestorgb2c.blob.core.windows.net/root/signup.cshtml</LoadUri>
+        <LoadUri>https://ashutestorgb2c.blob.core.windows.net/root/signup.cshtml</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.10</DataUri>
         <Metadata>
@@ -75,7 +75,7 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.localaccountpasswordreset">
-        <LoadUri>>https://ashutestorgb2c.blob.core.windows.net/root/selfAsserted.cshtml</LoadUri>
+        <LoadUri>https://ashutestorgb2c.blob.core.windows.net/root/selfAsserted.cshtml</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.10</DataUri>
         <Metadata>
@@ -84,7 +84,7 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.localaccountsignin">
-        <LoadUri>>https://ashutestorgb2c.blob.core.windows.net/root/selfAsserted.cshtml</LoadUri>
+        <LoadUri>https://ashutestorgb2c.blob.core.windows.net/root/selfAsserted.cshtml</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.10</DataUri>
         <Metadata>
