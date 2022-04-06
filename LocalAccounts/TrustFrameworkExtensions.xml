@@ -34,7 +34,7 @@
           <InputClaim ClaimTypeReferenceId="otp" TransformationClaimType="content.0.value" />
         </InputClaims>
         <InputParameters>
-          <InputParameter Id="content.0.type" Datatype="string" value="text/plain"/>
+          <InputParameter Id="content.0.type" DataType="string" value="text/plain"/>
           <!-- Update the template_id value with the ID of your SendGrid template. -->
           <InputParameter Id="from.email" DataType="string" Value="arath6@its.jnj.com"/>
           <!-- Update with a subject line appropriate for your organization. -->
