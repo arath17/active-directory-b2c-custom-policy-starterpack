@@ -6,30 +6,6 @@
     <PolicyId>B2C_1A_TrustFrameworkLocalization</PolicyId>
   </BasePolicy>
   <BuildingBlocks>
-    <DisplayControls>
-      <DisplayControl Id="emailVerificationControl" UserInterfaceControlType="VerificationControl">
-        <DisplayClaims>
-          <DisplayClaim ClaimTypeReferenceId="email" Required="true" />
-          <DisplayClaim ClaimTypeReferenceId="verificationCode" ControlClaimType="VerificationCode" Required="true" />
-        </DisplayClaims>
-        <OutputClaims>
-          <OutputClaim ClaimTypeReferenceId="email" />
-        </OutputClaims>
-        <Actions>
-          <Action Id="SendCode">
-            <ValidationClaimsExchange>
-              <ValidationClaimsExchangeTechnicalProfile TechnicalProfileReferenceId="GenerateOtp" />
-              <ValidationClaimsExchangeTechnicalProfile TechnicalProfileReferenceId="SendOtp" />
-            </ValidationClaimsExchange>
-          </Action>
-          <Action Id="VerifyCode">
-            <ValidationClaimsExchange>
-              <ValidationClaimsExchangeTechnicalProfile TechnicalProfileReferenceId="VerifyOtp" />
-            </ValidationClaimsExchange>
-          </Action>
-        </Actions>
-      </DisplayControl>
-    </DisplayControls>
     <ClaimsSchema>
       <ClaimType Id="isForgotPassword">
         <DisplayName>isForgotPassword</DisplayName>
@@ -155,6 +131,30 @@
         </Metadata>
       </ContentDefinition>
     </ContentDefinitions>
+    <DisplayControls>
+      <DisplayControl Id="emailVerificationControl" UserInterfaceControlType="VerificationControl">
+        <DisplayClaims>
+          <DisplayClaim ClaimTypeReferenceId="email" Required="true" />
+          <DisplayClaim ClaimTypeReferenceId="verificationCode" ControlClaimType="VerificationCode" Required="true" />
+        </DisplayClaims>
+        <OutputClaims>
+          <OutputClaim ClaimTypeReferenceId="email" />
+        </OutputClaims>
+        <Actions>
+          <Action Id="SendCode">
+            <ValidationClaimsExchange>
+              <ValidationClaimsExchangeTechnicalProfile TechnicalProfileReferenceId="GenerateOtp" />
+              <ValidationClaimsExchangeTechnicalProfile TechnicalProfileReferenceId="SendOtp" />
+            </ValidationClaimsExchange>
+          </Action>
+          <Action Id="VerifyCode">
+            <ValidationClaimsExchange>
+              <ValidationClaimsExchangeTechnicalProfile TechnicalProfileReferenceId="VerifyOtp" />
+            </ValidationClaimsExchange>
+          </Action>
+        </Actions>
+      </DisplayControl>
+    </DisplayControls>
   </BuildingBlocks>
   <ClaimsProviders>
     <ClaimsProvider>
