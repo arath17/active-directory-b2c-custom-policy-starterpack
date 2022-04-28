@@ -1,12 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<TrustFrameworkPolicy 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-  xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" 
-  PolicySchemaVersion="0.3.0.0" 
-  TenantId="ashutestorg.onmicrosoft.com" 
-  PolicyId="B2C_1A_TrustFrameworkLocalization" 
-  PublicPolicyUri="http://ashutestorg.onmicrosoft.com/B2C_1A_TrustFrameworkLocalization">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="ashutestorg.onmicrosoft.com" PolicyId="B2C_1A_TrustFrameworkLocalization" PublicPolicyUri="http://ashutestorg.onmicrosoft.com/B2C_1A_TrustFrameworkLocalization">
 
   <BasePolicy>
     <TenantId>ashutestorg.onmicrosoft.com</TenantId>
@@ -17,49 +10,49 @@
 
     <ContentDefinitions>
       <ContentDefinition Id="api.signuporsignin">
-        <LocalizedResourcesReferences MergeBehavior="Prepend">
+        <LocalizedResourcesReferences MergeBehavior="ReplaceAll">
           <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.signuporsignin.en" />
           <!-- Add more languages here -->
         </LocalizedResourcesReferences>
       </ContentDefinition>
 
       <ContentDefinition Id="api.localaccountsignup">
-        <LocalizedResourcesReferences MergeBehavior="Prepend">
+        <LocalizedResourcesReferences MergeBehavior="ReplaceAll">
           <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.localaccountsignup.en" />
           <!-- Add more languages here -->
         </LocalizedResourcesReferences>
       </ContentDefinition>
 
       <ContentDefinition Id="api.selfasserted">
-        <LocalizedResourcesReferences MergeBehavior="Prepend">
+        <LocalizedResourcesReferences MergeBehavior="ReplaceAll">
           <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.selfasserted.en" />
           <!-- Add more languages here -->
         </LocalizedResourcesReferences>
       </ContentDefinition>
 
       <ContentDefinition Id="api.localaccountpasswordreset">
-        <LocalizedResourcesReferences MergeBehavior="Prepend">
+        <LocalizedResourcesReferences MergeBehavior="ReplaceAll">
           <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.localaccountpasswordreset.en" />
           <!-- Add more languages here -->
         </LocalizedResourcesReferences>
       </ContentDefinition>
 
       <ContentDefinition Id="api.idpselections">
-        <LocalizedResourcesReferences MergeBehavior="Prepend">
+        <LocalizedResourcesReferences MergeBehavior="ReplaceAll">
           <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.idpselections.en" />
           <!-- Add more languages here -->
         </LocalizedResourcesReferences>
       </ContentDefinition>
 
       <ContentDefinition Id="api.localaccountsignin">
-        <LocalizedResourcesReferences MergeBehavior="Prepend">
+        <LocalizedResourcesReferences MergeBehavior="ReplaceAll">
           <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.localaccountsignin.en" />
           <!-- Add more languages here -->
         </LocalizedResourcesReferences>
       </ContentDefinition>
 
       <ContentDefinition Id="api.selfasserted.profileupdate">
-        <LocalizedResourcesReferences MergeBehavior="Prepend">
+        <LocalizedResourcesReferences MergeBehavior="ReplaceAll">
           <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.selfasserted.profileupdate.en" />
           <!-- Add more languages here -->
         </LocalizedResourcesReferences>
@@ -114,9 +107,6 @@
           <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="DisplayName">New Password</LocalizedString>
           <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="UserHelpText">Enter new password</LocalizedString>
           <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="PatternHelpText">Your password should be 8-16 characters long, with atleast a lowercase character, an uppercase character and a digit.</LocalizedString>
-          <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="DisplayName">Confirm New Password</LocalizedString>
-          <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="UserHelpText">Confirm new password</LocalizedString>
-          <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="PatternHelpText">Your password should be 8-16 characters long, with atleast a lowercase character, an uppercase character and a digit.</LocalizedString>
           <LocalizedString ElementType="ClaimType" ElementId="displayName" StringId="DisplayName">Display Name</LocalizedString>
           <LocalizedString ElementType="ClaimType" ElementId="displayName" StringId="UserHelpText">Your display name.</LocalizedString>
           <LocalizedString ElementType="ClaimType" ElementId="surname" StringId="DisplayName">Surname</LocalizedString>
@@ -133,7 +123,7 @@
           <LocalizedString ElementType="UxElement" StringId="required_field">This information is required.</LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="button_cancel">Cancel</LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="ver_but_edit">Change e-mail</LocalizedString>
-          <LocalizedString ElementType="UxElement" StringId="ver_but_resend">Send new code</LocalizedString>
+          <LocalizedString ElementType="UxElement" StringId="ver_but_resend">Resend Code</LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="ver_but_send">Send verification code</LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="ver_but_verify">Verify code</LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="ver_fail_code_expired">That code is expired. Please request a new code.</LocalizedString>
@@ -171,18 +161,16 @@
           <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="DisplayName">New Password</LocalizedString>
           <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="UserHelpText">Enter new password</LocalizedString>
           <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="PatternHelpText">Your password should be 8-16 characters long, with atleast a lowercase character, an uppercase character and a digit.</LocalizedString>
-          <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="DisplayName">Confirm New Password</LocalizedString>
-          <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="UserHelpText">Confirm new password</LocalizedString>
-          <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="PatternHelpText">Your password should be 8-16 characters long, with atleast a lowercase character, an uppercase character and a digit.</LocalizedString>
+
           <LocalizedString ElementType="UxElement" StringId="error_passwordEntryMismatch">The password entry fields do not match. Please enter the same password in both fields and try again.</LocalizedString>
-          <LocalizedString ElementType="UxElement" StringId="error_fieldIncorrect">One or more fields are filled out incorrectly. Please check your entries and try again.</LocalizedString>
+          <LocalizedString ElementType="UxElement" StringId="error_fieldIncorrect"></LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="button_continue">Continue</LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="button_cancel">Cancel</LocalizedString>
           <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsPrincipalDoesNotExist">An account could not be found for the provided user ID.</LocalizedString>
           <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsTransformationBooleanValueIsNotEqual">Your account has been locked. Contact your support person to unlock it, then try again.</LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="required_field">This information is required.</LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="ver_but_edit">Change e-mail</LocalizedString>
-          <LocalizedString ElementType="UxElement" StringId="ver_but_resend">Send new code</LocalizedString>
+          <LocalizedString ElementType="UxElement" StringId="ver_but_resend">Resend Code</LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="ver_but_send">Send verification code</LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="ver_but_verify">Verify code</LocalizedString>
           <LocalizedString ElementType="UxElement" StringId="ver_fail_code_expired">That code is expired. Please request a new code.</LocalizedString>
@@ -201,6 +189,17 @@
           <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfInvalidInput">{0} has invalid input.</LocalizedString>
           <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfMissingRequiredElement">Missing required element: {0}</LocalizedString>
           <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfValidationError">Error in validation by: {0}</LocalizedString>
+
+           <!-- Display control UI elements-->
+    <LocalizedString ElementType="DisplayControl" ElementId="emailVerificationControl" StringId="intro_msg">Verification is necessary. Please click Send button.</LocalizedString>
+    <LocalizedString ElementType="DisplayControl" ElementId="emailVerificationControl" StringId="success_send_code_msg">Verification code has been sent to your inbox. Please copy it to the input box below.</LocalizedString>
+    <LocalizedString ElementType="DisplayControl" ElementId="emailVerificationControl" StringId="failure_send_code_msg">We are having trouble verifying your email address. Please enter a valid email address and try again.</LocalizedString>
+    <LocalizedString ElementType="DisplayControl" ElementId="emailVerificationControl" StringId="success_verify_code_msg">E-mail address verified. You can now continue.</LocalizedString>
+    <LocalizedString ElementType="DisplayControl" ElementId="emailVerificationControl" StringId="failure_verify_code_msg">We are having trouble verifying your email address. Please try again.</LocalizedString>
+    <LocalizedString ElementType="DisplayControl" ElementId="emailVerificationControl" StringId="but_send_code">Send verification code</LocalizedString>
+    <LocalizedString ElementType="DisplayControl" ElementId="emailVerificationControl" StringId="but_verify_code">Verify code</LocalizedString>
+    <LocalizedString ElementType="DisplayControl" ElementId="emailVerificationControl" StringId="but_send_new_code">Resend code</LocalizedString>
+    <LocalizedString ElementType="DisplayControl" ElementId="emailVerificationControl" StringId="but_change_claims">Change e-mail</LocalizedString>
         </LocalizedStrings>
       </LocalizedResources>
 
