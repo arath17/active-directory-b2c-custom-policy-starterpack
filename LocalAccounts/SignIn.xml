@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="ashutestorg.onmicrosoft.com" PolicyId="B2C_1A_signin" PublicPolicyUri="http://ashutestorg.onmicrosoft.com/B2C_1A_signin">
+<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="ashutestorg.onmicrosoft.com" PolicyId="B2C_1A_signin" PublicPolicyUri="http://ashutestorg.onmicrosoft.com/B2C_1A_signin" DeploymentMode="Development" UserJourneyRecorderEndpoint="urn:journeyrecorder:applicationinsights">
 
   <BasePolicy>
     <TenantId>ashutestorg.onmicrosoft.com</TenantId>
     <PolicyId>B2C_1A_TrustFrameworkExtensions</PolicyId>
   </BasePolicy>
-  
+
   <UserJourneys>
     <UserJourney Id="SignIn">
       <OrchestrationSteps>
@@ -61,6 +61,7 @@
   <RelyingParty>
     <DefaultUserJourney ReferenceId="SignIn" />
     <UserJourneyBehaviors>
+      <JourneyInsights TelemetryEngine="ApplicationInsights" InstrumentationKey="adde7f4f-4c96-4aaa-a97d-7d352849b792" DeveloperMode="true" ClientEnabled="false" ServerEnabled="true" TelemetryVersion="1.0.0" />
       <ScriptExecution>Allow</ScriptExecution>
     </UserJourneyBehaviors>
     <TechnicalProfile Id="PolicyProfile">
@@ -68,7 +69,7 @@
       <Protocol Name="OpenIdConnect" />
       <OutputClaims>
         <OutputClaim ClaimTypeReferenceId="email" />
-        <OutputClaim ClaimTypeReferenceId="signInName" PartnerClaimType="email"/>
+        <OutputClaim ClaimTypeReferenceId="signInName" PartnerClaimType="email" />
         <OutputClaim ClaimTypeReferenceId="objectId" PartnerClaimType="sub" />
         <OutputClaim ClaimTypeReferenceId="tenantId" AlwaysUseDefaultValue="true" DefaultValue="{Policy:TenantObjectId}" />
         <OutputClaim ClaimTypeReferenceId="isForgotPassword" DefaultValue="false" />

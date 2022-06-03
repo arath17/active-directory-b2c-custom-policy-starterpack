@@ -53,10 +53,13 @@
 
       <!-- Claims needed for local accounts. -->
       <ClaimType Id="signInName">
-        <DisplayName>Sign in name</DisplayName>
+        <DisplayName>Email Address</DisplayName>
         <DataType>string</DataType>
-        <UserHelpText />
+        <UserHelpText>Email address that can be used to contact you.</UserHelpText>
         <UserInputType>TextBox</UserInputType>
+        <Restriction>
+          <Pattern RegularExpression="^[a-zA-Z0-9.!#$%&amp;'^_`{}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" HelpText="Please enter a valid email address." />
+        </Restriction>
       </ClaimType>
 
       <ClaimType Id="signInNames.emailAddress">
@@ -359,6 +362,15 @@
         </Metadata>
       </ContentDefinition>
 
+      <ContentDefinition Id="api.localaccountemailchange">
+        <LoadUri>~/tenant/templates/AzureBlue/selfAsserted.cshtml</LoadUri>
+        <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+        <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.10</DataUri>
+        <Metadata>
+          <Item Key="DisplayName">Update User's Email Address</Item>
+        </Metadata>
+      </ContentDefinition>
+
       <ContentDefinition Id="api.localaccountsignup">
         <LoadUri>~/tenant/templates/AzureBlue/selfAsserted.cshtml</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
@@ -369,6 +381,15 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.localaccountpasswordreset">
+        <LoadUri>~/tenant/templates/AzureBlue/selfAsserted.cshtml</LoadUri>
+        <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+        <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.10</DataUri>
+        <Metadata>
+          <Item Key="DisplayName">Local account reset password page</Item>
+        </Metadata>
+      </ContentDefinition>
+
+      <ContentDefinition Id="api.localaccountpasswordchange">
         <LoadUri>~/tenant/templates/AzureBlue/selfAsserted.cshtml</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.10</DataUri>
